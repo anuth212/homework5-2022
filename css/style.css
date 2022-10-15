@@ -4,6 +4,8 @@ body{
     background-color: #f1f1f1;
 }
 
+/*move animation for logo*/
+
 @keyframes move {
     from{
         width: 25px;
@@ -20,11 +22,13 @@ body{
     
 }
 
+/*elements for default*/
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 
 .nav_links{
     display: flex;
@@ -81,6 +85,8 @@ header{
 
 }
 
+
+/*elements for width 900+*/
 @media screen and (min-width: 900px){
 
 header{
@@ -111,12 +117,15 @@ body > header{
 
 }
 
+/*no animation for reduced motion*/
 @media (prefers-reduced-motion) {
     #logo{
         animation: none;
     }
   }
 
+
+/*elements for print with portrait*/
 @media print and (orientation: portrait) {
 
    
